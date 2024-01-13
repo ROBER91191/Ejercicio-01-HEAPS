@@ -91,6 +91,7 @@ class Heap:
         self.heap.append(item)
         self._bubble_up(len(self.heap) - 1)
 
+
     def pop(self):
         '''
         Elimina y devuelve el elemento en la cima del montículo.
@@ -141,3 +142,8 @@ class Heap:
         :return: Representación string del objeto Montículo.
         '''
         return str(list(self.heap))
+    
+    def __print_heap__(self):
+        
+        for i in len(self.heap):
+            print (i)
