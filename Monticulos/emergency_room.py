@@ -6,6 +6,5 @@ class Emergency_room:
 
 
     def __str__(self):
-        test=self.value
-
+    
         return self.value.__str__()
