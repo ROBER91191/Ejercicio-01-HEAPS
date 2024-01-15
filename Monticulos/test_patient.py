@@ -6,6 +6,9 @@ def create_heap(list_emergency_rooms):
     heap = MaxHeap()
     print('¿Está vacío? ' + str(heap.is_empty()))
     
+    if len(heap) == 20:
+        print("Hola")
+        
     for i in list_emergency_rooms:
         heap.push(i)
         print('Tamaño actual: ' + str(heap.size()))
@@ -16,6 +19,7 @@ def create_heap(list_emergency_rooms):
             print(patients)
             
     return heap
+
 
 
 def patient_care(list_heap):

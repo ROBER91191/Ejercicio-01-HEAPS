@@ -41,12 +41,12 @@ class Patient:
             if self.wait_hours<other.wait_hours:
                 return True
 
-        # if other.urgency_level == 10:
-        #     return True
-
-        # # Regla 2: Si no hay pacientes con urgencia máxima y han esperado más de 5 horas, atenderlos
-        # if other.urgency_level==0 and other.wait_hours > 5:
-        #     return True
+        if other.urgency_level == 10:
+            return True
+        
+        if self.urgency_level==other.urgency_level:
+                if self.wait_hours<other.wait_hours:
+                        return True
         
         return self.urgency_level < other.urgency_level
 
