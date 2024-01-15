@@ -2,8 +2,6 @@ from MaxHeap import MaxHeap
 from Patient_list import patient_list
 
 
-
-
 def create_heap(list_emergency_rooms):
     heap=MaxHeap()
     print('Esta vacio? ' + str(heap.is_empty()))
@@ -15,7 +13,6 @@ def create_heap(list_emergency_rooms):
     return heap
 
 def patient_care(list_heap)->list:
-    
     print(list_heap.__str__())
 
 
@@ -24,4 +21,3 @@ if __name__ == '__main__':
     list_emergency_rooms=patient_list()
     test=create_heap(list_emergency_rooms)
     patient_care(test)
-    print('hola')
