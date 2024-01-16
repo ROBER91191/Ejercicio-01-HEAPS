@@ -40,14 +40,13 @@ class Patient:
         if self.urgency_level==10 and other.urgency_level==10:
             if self.wait_hours<other.wait_hours:
                 return True
-
-        if other.urgency_level == 10:
-            return True
+            return False
         
         if self.urgency_level==other.urgency_level:
                 if self.wait_hours<other.wait_hours:
                         return True
-        
+                return False
+				
         return self.urgency_level < other.urgency_level
 
 
@@ -68,7 +67,7 @@ class Patient:
         :param other: Otro objeto Empleado para la comparación.
         :return: True si este empleado tiene un número identificador mayor que 'other'.
         '''
-        return self.urgency_level > other.urgency_level
+        return self.wait_hours > other.wait_hours
     
 
 

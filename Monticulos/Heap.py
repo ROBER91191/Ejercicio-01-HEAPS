@@ -53,8 +53,6 @@ class Heap:
         parent = self._parent(index)
         while index > 0 and self.compare(self.heap[parent], self.heap[index]):
             self.heap[index], self.heap[parent] = self.heap[parent], self.heap[index]
-            padre=self.heap[parent]
-            indice=self.heap[index]
             index = parent
             parent = self._parent(index)
 
