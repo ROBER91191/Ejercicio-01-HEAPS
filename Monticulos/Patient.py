@@ -18,12 +18,13 @@ class Patient:
             return 0
 
 
-    def equals(self, patient1) -> bool:
-
-        if self>patient1:
-            resultado = True
-        # Aquí irían los criterios de igualdad
-        return resultado
+    def equals(self, patient1):
+        result= False
+        if str(self.name)==str(patient1.name):
+            result = True
+        
+        
+        return result
     
     def __str__(self):
         return str(self.urgency_level ) + ' ' + self.name + ' ' +  str(self.wait_hours)
@@ -67,13 +68,14 @@ class Patient:
         :param other: Otro objeto Empleado para la comparación.
         :return: True si este empleado tiene un número identificador mayor que 'other'.
         '''
-        
-        if self.wait_hours==other.wait_hours:
+        total_wait_hours_father=12-self.wait_hours
+        total_wait_hour_child=12-other.wait_hours
+        if total_wait_hours_father==total_wait_hour_child:
                 if self.urgency_level>other.urgency_level:
                         return True
                 return False
         
-        return self.wait_hours > other.wait_hours
+        return total_wait_hours_father > total_wait_hour_child
     
 
 
@@ -104,3 +106,8 @@ class Patient:
         :return: True si este empleado tiene un número identificador distinto de 'other'.
         '''
         return not(self.__eq__(other))
+    
+    def __iter__(self):
+        yield self.name
+        yield self.urgency_level
+        yield self.wait_hours

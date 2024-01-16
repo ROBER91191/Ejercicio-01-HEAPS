@@ -1,8 +1,9 @@
 class Emergency_room:
 
-    def __init__(self, patient):
+    def __init__(self, max_heap,min_heap):
         
-        self.value=patient
+        self.max_heap=max_heap
+        self.min_heap=min_heap
 
 
     def __str__(self):
