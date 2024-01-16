@@ -14,7 +14,7 @@ Tareas:
 ### Implementación:
 Diseña las clases Paciente (con atributos como nombre, nivel_urgencia y horas_espera) y SalaEmergencias (con los montículos max y min como atributos, y métodos para gestionarlos).
 Simulación:
-Genera una lista de pacientes aleatorios con niveles de urgencia y tiempos de espera variados.
+Genera una lista de pacientes aleatorios con niveles de urgencia y tiempos de espera variados. ACLARACIÓN DE ENUNCIADO 16/01/2024*: Los tiempos de espera deberán encontrarse en una horquilla de entre 0h (acaba de llegar) y 12h (máximo). A la hora de incorporar el paciente al montículo mínimo, para asignarle posición dentro de este, realizaremos el siguiente cálculo: valor_de_comparacion = 12h - tiempo de espera.
 Añade estos pacientes a la SalaEmergencias, asegurando que sean incorporados a ambos montículos.
 Atención:
 Desencola y atiende a los pacientes siguiendo estas reglas:
@@ -28,3 +28,9 @@ Luego de simular la atención de 20 pacientes, genera un reporte que muestre los
 Debes utilizar Git y GitHub para gestionar las versiones de tu código. En el repositorio deberás incorporar un fichero README.md en el que aparezcan tu nombre y apellidos y una explicación y reflexión acerca del proyecto realizado. Recuerda incorporar, al principio del fichero README el link al repositorio de GitHub.
 
 En esta entrega a través del campus deberás enviar el repositorio exportado en formato ZIP. 
+
+
+
+
+
+*En caso de haber realizado la entrega en una fecha anterior, no estás obligado a cumplir con esta característica.

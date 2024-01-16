@@ -67,6 +67,12 @@ class Patient:
         :param other: Otro objeto Empleado para la comparación.
         :return: True si este empleado tiene un número identificador mayor que 'other'.
         '''
+        
+        if self.wait_hours==other.wait_hours:
+                if self.urgency_level>other.urgency_level:
+                        return True
+                return False
+        
         return self.wait_hours > other.wait_hours
     
 

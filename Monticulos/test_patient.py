@@ -15,7 +15,6 @@ def patients_Max_heap(list_emergency_rooms):
     return heap
 
 
-
 def patient_care(list_heap):
 	print("Ordered Patients by priority")
 	for val in list_heap.heap:
@@ -28,7 +27,7 @@ def patients_Min_heap(list_emergency_rooms):
     for i in list_emergency_rooms:
         heap.push(i)
         
-        # print("Padre: ", heap.peek(), "\n")
+        print("Padre: ", heap.peek(), "\n")
     print('Total patients: ' + str(heap.size()))
     return heap
 
