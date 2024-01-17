@@ -1,7 +1,7 @@
 
 ## GITHUB: https://github.com/ROBER91191/Ejercicio-01-HEAPS.git
 
-# Alumno
+# Nombre
 ### Roberto Serpa Olivera
 
 
