@@ -1,3 +1,6 @@
+
+## GITHUB: https://github.com/ROBER91191/Ejercicio-01-HEAPS.git
+
 # Alumno
 ### Roberto Serpa Olivera
 
@@ -55,5 +58,3 @@ Método del Paciente para verificar las condiciones de horas de espera
         return total_wait_hours_father > total_wait_hour_child
 
 ### NOTA: No he podido realizar el proceso de desencolar los monticulos, de cuando eliminas un paciente en un montículo que se elimine en otro.
-
-## GITHUB: https://github.com/ROBER91191/Ejercicio-01-HEAPS.git
